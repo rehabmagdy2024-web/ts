@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Student Registration System</title>
+ 
+</head>
+<body>
+
+ 
+  <div class="glass-card form-container">
+    <h2>Add New Student</h2>
+    <div id="error" class="error-msg"></div>
+
+    <form id="studentForm">
+      <div class="form-group">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" placeholder="name" autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="age">
+      </div>
+
+      <div class="form-group">
+        <label for="courseName">Course Name</label>
+        <input type="text" id="courseName" placeholder="JavaScript" autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label for="grade">Grade (0 - 100)</label>
+        <input type="number" id="grade" placeholder="85">
+      </div>
+
+      <button type="submit" class="btn-submit">Add Student</button>
+    </form>
+  </div>
+
+ 
+  <div id="studentsSection" class="students-section">
+    <h3>Registered Students</h3>
+    <div id="cardsContainer" class="cards-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
